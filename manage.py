@@ -12,8 +12,6 @@ from flask.cli import FlaskGroup
 app = create_app('development')
 cli = FlaskGroup(app)
 
-# migrate = Migrate(app,db)
-
 
 @cli.command('test')
 def test():
